@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from dataclasses import dataclass
 from src.components.data_transformation import DataTransformation
-
+from src.components.mode_trainer import ModelTrainer
 
 # This class only decide where to save the data later 
 
@@ -51,5 +51,7 @@ if __name__ =="__main__":
     obj=DataIngestion()
     train_set,test_set=obj.initiate_data_ingestion()
     data_transformation=DataTransformation()
-    data_transformation.intiate_data_transformation(train_path_data=train_set,test_data_path=test_set)
+    train_arr,test_arr=data_transformation.intiate_data_transformation(train_path_data=train_set,test_data_path=test_set)
+    modeltrainer=ModelTrainer()
+    print(modeltrainer.initiate_model_trainning(train_arr,test_arr))
 
