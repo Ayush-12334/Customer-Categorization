@@ -211,8 +211,7 @@ __marimo__/
 logs/
 *.log
 
-# Ignore all model pickle files
-*.pkl
+
 machine_learning/
 *.pyc
 __pycache__/
