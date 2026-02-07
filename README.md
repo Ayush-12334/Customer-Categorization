@@ -53,21 +53,6 @@ This enables:
 
 ---
 
-## 🖼️ Application Screenshots
-
-(Add your screenshots inside a folder named `screenshots`)
-
-### 🏠 Customer Input Form
-
-![Customer Form](screenshots/form.png)
-
----
-
-### 🎯 Prediction Result Page
-
-![Prediction Result](screenshots/result.png)
-
----
 
 ## 💡 Proposed Solution
 
